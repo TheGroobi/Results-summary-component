@@ -1,0 +1,62 @@
+:root {
+    --red: hsl(0, 100%, 67%);
+    --yellow: hsl(39, 100%, 56%);
+    --green: hsl(166, 100%, 37%);
+    --blue-text: hsl(234, 85%, 45%);
+    --blue-gradient-1: hsl(252, 100%, 67%);
+    --blue-gradient-2: hsl(241, 81%, 54%);
+    --violet-gradient-1: hsla(256, 72%, 46%, 1);
+    --blue-violet-gradient-1: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --blue-main: hsl(221, 100%, 96%);
+    --lavender: hsl(241, 100%, 89%);
+    --dark-blue-button: hsl(224, 30%, 27%);
+}
+
+body {
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--white);
+}
+/* Figure out why main is bigger than content!! 
+    Add font-weight to different sections od card-1 */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.card-1 {
+    color: var(--white);
+    flex-basis: 33%;
+    background: linear-gradient(
+        var(--blue-gradient-1), var(--blue-gradient-2)
+    );
+    border-radius: 15px;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Add circle and figure out why gradient doesn't work 
+    Add % values to the gradient for better transition */
+.circle {
+    background-color: linear-gradient(
+        var(--violet-gradient-1)
+        var(--blue-violet-gradient-1)
+
+    );
+    border-radius: 50px;
+    width: max-content;
+}
+
+.container-score-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
