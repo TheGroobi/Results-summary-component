@@ -135,7 +135,11 @@ svg {
 
 span {
     color: var(--dark-blue-button);
-    font-weight: 600;
+}
+
+.score {
+    font-weight: 800;
+    margin-right: 2px;
 }
 
 .red {
@@ -202,4 +206,9 @@ span {
     .circle h2 {
         margin: 0;
     }
+
+    .text {
+        min-width: 140px;
+    }
+    
 }
