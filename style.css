@@ -28,14 +28,10 @@ body {
     text-align: center;
 }
 /*Add font-weight to different sections od card-1 */
+
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr;
-}
-
-.box-shadow{
-    display: grid;
-    box-shadow: 0px 15px 25px var(--blue-main);
+    box-shadow: 5px 25px 50px 1px hsla(224, 53%, 64%, 0.274);
     border-radius: 25px;
 }
 
@@ -63,6 +59,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 .circle h1, .circle p {
@@ -94,7 +91,7 @@ header {
 
 .card-2 {
     width: 265px;
-    grid-column: 3 / 4;
+    grid-column-start: 2;
     border-radius: 25px;
     padding: 2em;
     display: flex;
@@ -117,6 +114,7 @@ header {
     display: flex;
     align-items: center;
     border-radius: 15px;
+    max-height: 50px;
 }
 
 .container-score-text p {
@@ -160,4 +158,50 @@ span {
 .lavender {
     background-color: var(--lavender);
     color: hsl(241, 100%, 35%);
+}
+
+.button {
+    background-color: var(--dark-blue-button);
+    min-height: 3em;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    margin-top: 2em;
+}
+
+@media only screen and (max-width: 375px) {
+    .card-2 {
+        box-sizing: border-box;
+        min-width: 375px;
+    }
+
+    .card-1 {
+        min-width: 375px;
+        box-sizing: border-box;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    
+    .wrapper {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .circle {
+        width: 125px;
+    }
+
+    body {
+        overflow: hidden;
+        font-size: 0.95em;
+    }
+
+    .circle h2 {
+        margin: 0;
+    }
 }
