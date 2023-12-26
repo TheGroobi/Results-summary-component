@@ -1,17 +1,17 @@
 :root {
-    --red: hsl(0, 100%, 96%);
-    --yellow: hsl(39, 100%, 96%);
-    --green: hsl(166, 100%, 96%);
+    --red: hsl(0, 100%, 98%);
+    --yellow: hsl(39, 100%, 98%);
+    --green: hsl(166, 100%, 98%);
     --blue-text: hsl(234, 85%, 45%);
     --blue-gradient-1: hsl(252, 100%, 63%);
     --blue-gradient-2: hsl(241, 81%, 57%);
     --violet-gradient-1: hsla(256, 72%, 46%, 1);
-    --blue-violet-gradient-1: hsla(241, 72%, 46%, 0);
+    --blue-dark: hsla(241, 72%, 46%, 0);
     --white: hsl(0, 0%, 100%);
     --white-gray-1: hsl(0, 0%, 60%);
     --white-gray: hsl(0, 0%, 80%);
-    --blue-main: hsl(221, 100%, 96%);
-    --lavender: hsl(241, 100%, 96%);
+    --blue-main: hsl(221, 100%, 98%);
+    --lavender: hsl(241, 100%, 98%);
     --dark-blue-button: hsl(224, 30%, 27%);
 }
 
@@ -42,14 +42,14 @@ body {
 .card-1 {
     color: var(--white);
     background: linear-gradient(
-        var(--blue-gradient-1), var(--blue-gradient-2) 50%
+        var(--blue-gradient-1), var(--blue-gradient-2) 60%
         );
     border-radius: 25px;
     padding: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
+    width: 265px;
 }
 
 .circle {
@@ -93,7 +93,7 @@ header {
 }
 
 .card-2 {
-    width: 250px;
+    width: 265px;
     grid-column: 3 / 4;
     border-radius: 25px;
     padding: 2em;
@@ -115,22 +115,49 @@ header {
 
 .container-score-text {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     border-radius: 15px;
 }
 
+.container-score-text p {
+    color: var(--white-gray-1);
+}
+
+.text {
+    display: inline-flex;
+    justify-content: flex-start;
+    margin-right: 3em;
+    min-width: 70px;
+    font-weight: 500;
+}
+
+svg {
+    margin: 0 1em;
+}
+
+/* font-weight: 600; */
+
+span {
+    color: var(--dark-blue-button);
+    font-weight: 600;
+}
+
 .red {
     background-color: var(--red);
+    color: hsl(0, 100%, 70%);
 }
 
 .yellow {
     background-color: var(--yellow);
+    color: hsl(39, 100%, 65%);
 }
 
 .green {
     background-color: var(--green);
+    color: hsl(166, 100%, 35%);
 }
+
 .lavender {
-background-color: var(--lavender);
+    background-color: var(--lavender);
+    color: hsl(241, 100%, 35%);
 }
