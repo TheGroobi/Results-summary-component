@@ -20,6 +20,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ![Desktop](./assets/images/desktop.png)
 ![Mobile](./assets/images/mobile.png)
+![Hover](./assets/images/hover.png)
 
 ### Links
 

@@ -173,6 +173,11 @@ span {
     margin-top: 2em;
 }
 
+.button:hover {
+    background: linear-gradient(var(--blue-gradient-1), var(--blue-gradient-2));
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 375px) {
     .card-2 {
         box-sizing: border-box;
