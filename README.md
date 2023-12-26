@@ -19,8 +19,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 ### Screenshot
 
 ![Desktop](./assets/images/desktop.png)
-![Mobile](./assets/images/mobile.png)
 ![Hover](./assets/images/hover.png)
+![Mobile](./assets/images/mobile.png)
 
 ### Links
 
