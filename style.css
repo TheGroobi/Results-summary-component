@@ -113,7 +113,7 @@ header {
 .container-score-text {
     display: flex;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 10px;
     max-height: 50px;
 }
 
@@ -132,8 +132,6 @@ header {
 svg {
     margin: 0 1em;
 }
-
-/* font-weight: 600; */
 
 span {
     color: var(--dark-blue-button);
