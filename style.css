@@ -14,49 +14,69 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     font-size: 18px;
     font-family: 'Hanken Grotesk', sans-serif;
     margin: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
     background-color: var(--white);
 }
 /* Figure out why main is bigger than content!! 
-    Add font-weight to different sections od card-1 */
-main {
-    display: flex;
-    justify-content: center;
+Add font-weight to different sections od card-1 */
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: "0 content content 0";
+}
+
+box{
+    box-shadow: 1px 1px 25px #cfcfcf;
 }
 
 .card-1 {
+    grid-column: "content";
     color: var(--white);
     flex-basis: 33%;
     background: linear-gradient(
         var(--blue-gradient-1), var(--blue-gradient-2)
-    );
-    border-radius: 15px;
+        );
+    border-radius: 25px;
     padding: 1.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: fit-content;
 }
-/* Add circle and figure out why gradient doesn't work 
+    
+    .card-2 {
+        grid-column: "content";
+        border-radius: 25px;
+    }
+
+    /* Add circle and figure out why gradient doesn't work 
     Add % values to the gradient for better transition */
-.circle {
-    background-color: linear-gradient(
-        var(--violet-gradient-1)
-        var(--blue-violet-gradient-1)
-
-    );
-    border-radius: 50px;
-    width: max-content;
-}
-
-.container-score-text {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+    .circle {
+        background-color: var(--blue-text);
+        border-radius: 50%;
+        aspect-ratio: 1;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .circle h1, .circle p {
+        margin: 0
+    }
+    
+    .circle h1 {
+        font-size: 3em;
+    }
+    
+    .container-score-text {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
